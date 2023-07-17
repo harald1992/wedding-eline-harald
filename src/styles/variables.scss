@@ -1,0 +1,36 @@
+// use scss variables for media queries since css vars don't work with media queries. Maybe use css environment variables when that is released.
+$layout-breakpoint-xxs: 480px;
+$layout-breakpoint-xs: 719px;
+$layout-breakpoint-sm: 959px;
+$layout-breakpoint-l: 1025px;
+$layout-breakpoint-xl: 1200px;
+
+@mixin xxs {
+  @media (max-width: #{$layout-breakpoint-xxs}) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: #{$layout-breakpoint-xs}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$layout-breakpoint-sm}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$layout-breakpoint-l}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$layout-breakpoint-xl}) {
+    @content;
+  }
+}

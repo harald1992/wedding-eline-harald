@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+
+  .header-text {
+    padding: 32px 4% 10px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    justify-content: center;
+
+    .names {
+      font-family: "Tangerine";
+      font-weight: normal;
+      font-size: 3.5rem;
+    }
+
+    .date {
+      font-family: "Cormorant";
+      font-weight: normal;
+      font-size: 1.25rem;
+    }
+
+    .days-to-go {
+      font-family: "Cormorant";
+      font-weight: normal;
+      font-size: 1.25rem;
+    }
+
+    > * {
+      padding: 8px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    margin: 8px auto;
+    max-width: 1000px;
+    justify-content: center;
+
+    a.link {
+      text-decoration: none;
+      padding: 6px 8px;
+      color: var(--darkgrey);
+      font-size: 1.25rem;
+      font-family: "Cormorant";
+
+      &--active {
+        color: black;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+
+  img.hero {
+    width: 100%;
+    margin: 8px 0;
+  }
+}

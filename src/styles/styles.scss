@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --darkgrey: darkGrey;
+}
+
+@font-face {
+  font-family: "Tangerine";
+  src: url("/assets/fonts/Tangerine/Tangerine-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tangerine";
+  src: url("/assets/fonts/Tangerine/Tangerine-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("/assets/fonts/Cormorant/static/Cormorant-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("/assets/fonts/Cormorant/static/Cormorant-bold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+.font-tangerine {
+  font-family: "Tangerine";
+}
+
+.font-cormorant {
+  font-family: "Cormorant";
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "ROsans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1 0 auto;
+  overflow: hidden;
+  padding: 5% 10% 0;
+}
+
+a {
+  text-decoration: none;
+}
