@@ -42,19 +42,19 @@
     a.link {
       text-decoration: none;
       padding: 6px 8px;
-      color: var(--darkgrey);
+      color: var(--light);
       font-size: 1.25rem;
       font-family: "Cormorant";
 
       &--active {
-        color: black;
-        border-bottom: 1px solid black;
+        color: white;
+        border-bottom: 1px solid var(--light);
       }
     }
   }
 
-  img.hero {
-    width: 100%;
-    margin: 8px 0;
-  }
+  //   img.hero {
+  //     width: 100%;
+  //     margin: 8px 0;
+  //   }
 }

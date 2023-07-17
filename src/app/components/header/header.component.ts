@@ -30,4 +30,15 @@ export class HeaderComponent {
       label: 'Party',
     },
   ];
+
+  get daysLeftForWedding() {
+    const today = new Date();
+    const weddingDate = new Date('2024-11-17');
+
+    const dt = weddingDate.getTime() - today.getTime();
+    const dayInMs = 1000 * 60 * 60 * 24;
+
+    const daysLeft = Math.ceil(dt / dayInMs);
+    return daysLeft;
+  }
 }

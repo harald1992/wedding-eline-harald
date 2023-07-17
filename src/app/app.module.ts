@@ -7,6 +7,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PhotosComponent } from './pages/photos/photos.component';
 import { PartyComponent } from './pages/party/party.component';
+import { ParticleCanvasComponent } from './components/particle-canvas/particle-canvas.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PartyComponent } from './pages/party/party.component';
     HomepageComponent,
     HeaderComponent,
     PhotosComponent,
-    PartyComponent
+    PartyComponent,
+    ParticleCanvasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
