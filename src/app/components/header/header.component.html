@@ -1,7 +1,10 @@
 <header class="header">
+  <ng-container *ngIf="isMobile">
+    <app-hamburger-menu [menuItems]="menuItems"></app-hamburger-menu>
+  </ng-container>
   <div class="header-text">
     <h1 class="names">Eline & Harald</h1>
-    <h3 class="date">November 17, 2024 • Hilversum, Netherlands</h3>
+    <h3 class="date">Probably November 17, 2024 • Hilversum, Netherlands</h3>
     <p class="days-to-go">
       {{ daysLeftForWedding }}
       Days to go!

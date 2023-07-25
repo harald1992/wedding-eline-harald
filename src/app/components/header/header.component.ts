@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-interface MenuItem {
+export interface MenuItem {
   isExternal?: boolean;
   link: string;
   title: string;
@@ -13,6 +13,8 @@ interface MenuItem {
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  isMobile = false;
+
   menuItems: MenuItem[] = [
     {
       link: '/',

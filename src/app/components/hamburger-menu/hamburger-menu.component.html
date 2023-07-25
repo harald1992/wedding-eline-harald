@@ -1,0 +1,10 @@
+<a
+  *ngFor="let item of menuItems; let i = index"
+  class="link"
+  [routerLink]="item.link"
+  routerLinkActive="link--active"
+  [routerLinkActiveOptions]="{ exact: item.link === '/' }"
+  title="item.title"
+  [attr.aria-label]="'navigeer naar ' + item.link"
+  >{{ item.label }}</a
+>

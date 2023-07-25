@@ -9,6 +9,7 @@ import { PhotosComponent } from './pages/photos/photos.component';
 import { PartyComponent } from './pages/party/party.component';
 import { ParticleCanvasComponent } from './components/particle-canvas/particle-canvas.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HamburgerMenuComponent } from './components/hamburger-menu/hamburger-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PhotosComponent,
     PartyComponent,
     ParticleCanvasComponent,
-    FooterComponent
+    FooterComponent,
+    HamburgerMenuComponent
   ],
   imports: [
     BrowserModule,
